@@ -23,7 +23,11 @@ for (let i = 0; i < accTab.length; i++) {
   });
 }
 
-const swiper = new Swiper('.es-swiper1', {
+const baseWrapperSelector = '#es-rc #es-rc-content';
+
+const swiper1Wrapper = baseWrapperSelector + ' .es-cross-mobile';
+const swiper1Selector = swiper1Wrapper + ' .es-swiper1';
+const swiper1 = new Swiper(swiper1Selector, {
   direction: 'horizontal',
   loop: true,
 
@@ -38,7 +42,9 @@ const swiper = new Swiper('.es-swiper1', {
 
 });
 
-const swiper2 = new Swiper('.es-swiper2', {
+const swiper2Wrapper = baseWrapperSelector + ' .es-products-mobile';
+const swiper2Selector = swiper2Wrapper + ' .es-swiper2';
+const swiper2 = new Swiper(swiper2Selector, {
   direction: 'horizontal',
   loop: true,
 
