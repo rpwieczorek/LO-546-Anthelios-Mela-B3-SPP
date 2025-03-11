@@ -132,7 +132,7 @@ body {
   text-transform: uppercase;
   text-align: left;
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 20px;
 }
 #es-rc #es-rc-content .es-title-small {
   font-size: 30px;
@@ -151,7 +151,7 @@ body {
 #es-rc #es-rc-content .es-ingredience .es-ingredience__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 #es-rc #es-rc-content .es-ingredience .es-ingredience__container-title {
   text-align: center;
@@ -162,6 +162,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 25px;
 }
 #es-rc #es-rc-content .es-ingredience .es-ingredience__hand {
   width: 100%;
@@ -177,24 +178,21 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-#es-rc #es-rc-content .es-ingredience .es-ingredience__single > img {
-  max-width: 41%;
-}
 #es-rc #es-rc-content .es-ingredience .es-ingredience__single--text {
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 5px;
 }
 #es-rc #es-rc-content .es-ingredience .es-ingredience__single--text--title {
   font-weight: 900;
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 #es-rc #es-rc-content .es-ingredience .es-ingredience__single--text--desc {
-  font-size: 14px;
+  font-size: 16px;
 }
 #es-rc #es-rc-content .es-ingredience .es-ingredience__single--img img {
-  max-width: 80px;
+  max-width: 125px;
   transition: all 0.3s ease-in-out;
 }
 #es-rc #es-rc-content .es-ingredience .es-ingredience__single--img img:hover {
@@ -430,7 +428,7 @@ body {
 }
 #es-rc #es-rc-content .es-table__title {
   font-weight: 900;
-  font-size: 25px;
+  font-size: 30px;
   color: #013e93;
   text-align: center;
   text-transform: uppercase;
@@ -448,7 +446,7 @@ body {
 }
 #es-rc #es-rc-content .es-table__single p {
   margin-bottom: 25px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
 }
 #es-rc #es-rc-content .es-table__single .es-bold {
@@ -562,7 +560,7 @@ body {
   border: none;
 }
 #es-rc #es-rc-content .es-qa .es-accordion__element-content {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   background-color: #f4f4f4;
   color: #000;
@@ -572,13 +570,13 @@ body {
   padding-right: 20px;
   padding-bottom: 10px;
   max-height: 0;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 #es-rc #es-rc-content .es-qa .es-accordion__title {
   display: block;
   width: 100%;
   padding: 17px 50px 17px 15px;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   transition: all 200ms ease-out;
   cursor: pointer;
@@ -602,6 +600,9 @@ body {
 }
 #es-rc #es-rc-content .es-accordion__checkbox:checked + label + .acc-content {
   max-height: 500px;
+}
+#es-rc #es-rc-content .es-accordion__checkbox:checked + label > .es-accordion__arrow {
+  transform: rotate(180deg);
 }
 #es-rc #es-rc-content .es-qa__small-text {
   font-size: 12px;
