@@ -742,6 +742,8 @@ body {
       }
 
       .es-accordion__title {
+        display: block;
+        width: 100%;
         padding: 17px 50px 17px 15px;
         font-size: 16px;
         color: $color_1;
@@ -766,6 +768,14 @@ body {
       .es-accordion__arrow {
         transform: rotate(180deg);
       }
+    }
+
+    .es-accordion__checkbox {
+      display: none;
+    }
+
+    .es-accordion__checkbox:checked + label + .acc-content {
+      max-height: 500px;
     }
 
     .es-qa__small-text {

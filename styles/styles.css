@@ -575,6 +575,8 @@ body {
   transition: max-height 0.5s ease-out;
 }
 #es-rc #es-rc-content .es-qa .es-accordion__title {
+  display: block;
+  width: 100%;
   padding: 17px 50px 17px 15px;
   font-size: 16px;
   color: #fff;
@@ -594,6 +596,12 @@ body {
 }
 #es-rc #es-rc-content .active .es-accordion__arrow {
   transform: rotate(180deg);
+}
+#es-rc #es-rc-content .es-accordion__checkbox {
+  display: none;
+}
+#es-rc #es-rc-content .es-accordion__checkbox:checked + label + .acc-content {
+  max-height: 500px;
 }
 #es-rc #es-rc-content .es-qa__small-text {
   font-size: 12px;
