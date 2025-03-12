@@ -132,6 +132,7 @@ body {
     }
 
     .es-benefits {
+      margin-top: 70px;
       text-align: center;
     }
 
@@ -139,7 +140,6 @@ body {
       text-transform: uppercase;
       font-size: 24px;
       font-weight: 900;
-      margin-top: 35px;
       margin-bottom: 15px;
     }
 
@@ -151,20 +151,19 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      margin-top: 30px;
+      gap: 25px;
+      margin-top: 70px;
     }
 
     .es-benefits__single {
       display: flex;
-      margin: 15px 10px;
-      align-items: center;
     }
 
     .es-benefits__single--icon {
       & > img {
-        max-width: 35px;
-        width: 35px;
-        height: 30.88px;
+        max-width: 51px;
+        width: 51px;
+        height: 45px;
       }
     }
 
@@ -183,33 +182,32 @@ body {
     }
 
     .es-ingredience {
-      margin: 30px 0;
       display: grid;
       grid-template-columns: 100%;
 
       .es-title-small {
         margin-bottom: 10px;
       }
-    }
 
-    .es-ingredience {
       .es-ingredience__container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
       }
 
       .es-ingredience__container-title {
         text-align: center;
         text-transform: uppercase;
         font-size: 24px;
+        margin-top: 75px;
+        margin-bottom: 40px;
       }
 
       .es-ingredience__list {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        gap: 25px;
+        gap: 2px;
       }
 
       .es-ingredience__hand {
@@ -225,8 +223,6 @@ body {
         justify-content: flex-start;
         align-items: center;
         padding-top: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
       }
 
       .es-ingredience__single--text {
@@ -803,10 +799,6 @@ body {
 @media (min-width: 576px) {
   #es-rc {
     #es-rc-content {
-      .es-ingredience {
-        grid-template-columns: 70% 30%;
-      }
-
       .es-research--left {
         width: 50%;
         margin: unset;
@@ -885,7 +877,11 @@ body {
       }
 
       .es-ingredience {
+          grid-template-columns: 65% 35%;
+
         .es-ingredience__container-title {
+          margin-top: 150px;
+          margin-bottom: 90px;
           font-size: 35px;
         }
 
